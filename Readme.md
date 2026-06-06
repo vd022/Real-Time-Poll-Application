@@ -10,7 +10,7 @@
 
 ## Project Name
 
-Tech Poll Dashboard
+Real-time Poll Dashboard
 
 ---
 
