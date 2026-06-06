@@ -58,17 +58,16 @@ The application updates results in real time and stores data using Local Storage
 
 ## Folder Structure
 
-Tech-Poll-Dashboard/
-│
-├── index.html
-├── style.css
-├── script.js
-├── screenshots/
-│ ├── dashboard.png
-│ ├── voting.png
-│ ├── chart.png
-│ ├── reset.png
-│ ├── stats.png
+Tech-Poll-Dashboard
+── index.html
+── style.css
+── script.js
+── screenshots/
+  ──── dashboard.png
+  ──── voting.png
+  ──── chart.png
+  ──── reset.png
+  ──── stats.png
 
 ---
 
