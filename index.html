@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tech Poll Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TOP -->
+    <div class="topbar">
+        <h1>📊 Tech Poll Dashboard</h1>
+
+        <button class="dark-btn">
+            <i class="fa fa-sun"></i> Dark
+        </button>
+    </div>
+
+    <div class="layout">
+
+        <!-- LEFT -->
+        <div class="left">
+
+            <div class="card vote-card">
+
+                <div class="vote-header">
+                    <div>
+                        <h2>Vote your favorite</h2>
+                        <p>Choose one option</p>
+                    </div>
+
+                    <button id="resetBtn" class="reset">Reset</button>
+                </div>
+
+                <button id="htmlBtn" class="vote html">
+                    <i class="fab fa-html5"></i> HTML
+                </button>
+
+                <button id="cssBtn" class="vote css">
+                    <i class="fab fa-css3-alt"></i> CSS
+                </button>
+
+                <button id="jsBtn" class="vote js">
+                    <i class="fab fa-js"></i> JavaScript
+                </button>
+
+                <div class="footer-note">
+                    Your vote contributes to live results
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+
+            <!-- PIE CHART CARD -->
+            <div class="card chart-card">
+
+                <h2>Live Results</h2>
+
+                <div class="chart-wrap">
+                    <canvas id="chart"></canvas>
+                </div>
+
+                <!-- LEGEND (EXACT LIKE IMAGE) -->
+                <div class="legend">
+                    <div><span class="dot html"></span> HTML</div>
+                    <div><span class="dot css"></span> CSS</div>
+                    <div><span class="dot js"></span> JavaScript</div>
+                </div>
+
+            </div>
+
+            <!-- STATS -->
+            <div class="card stats">
+
+                <h3>Total Votes</h3>
+
+                <div class="boxes">
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+                        <p>HTML</p>
+                        <span id="h">0</span>
+                    </div>
+
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+                        <p>CSS</p>
+                        <span id="c">0</span>
+                    </div>
+
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+                        <p>JS</p>
+                        <span id="j">0</span>
+                    </div>
+                </div>
+
+                <div class="total">
+                    Total Votes: <span id="total">0</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

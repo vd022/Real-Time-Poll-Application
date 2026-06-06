@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI";
+    background: #070f1e;
+    color: white;
+}
+
+/* top bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.topbar h1 {
+    font-size: 32px;
+}
+
+/* dark button */
+.dark-btn {
+    background: #101a33;
+    border: 1px solid #2a3b66;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+/* layout */
+.layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* card */
+.card {
+    background: #0e1a33;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+/* LEFT */
+.left {
+    flex: 1.2;
+}
+
+/* vote buttons */
+.vote {
+    width: 100%;
+    padding: 22px;
+    margin: 12px 0;
+    border-radius: 16px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* colors like image */
+.html { background: linear-gradient(135deg,#ff6b1a,#ff9a4d); }
+.css { background: linear-gradient(135deg,#1e90ff,#4db3ff); }
+.js { background: linear-gradient(135deg,#f7d000,#ffe680); color: black; }
+
+.reset {
+    background: #859ccd;
+    border: 1px solid #2f4570;
+    padding: 10px 14px;
+    border-radius: 10px;
+}
+
+/* RIGHT */
+.right {
+    flex: 1;
+}
+
+/* CHART CARD FIX */
+.chart-card {
+    position: relative;
+}
+
+/* PIE CHART SIZE FIX (IMPORTANT) */
+.chart-wrap {
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    filter: drop-shadow(0 0 20px rgba(0,150,255,0.4));
+}
+
+/* LEGEND EXACT STYLE */
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.dot.html { background: #ff6b1a; }
+.dot.css { background: #1e90ff; }
+.dot.js { background: #f7d000; }
+
+/* STATS */
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.boxes div {
+    text-align: center;
+    background: #0b142a;
+    padding: 12px;
+    border-radius: 14px;
+    width: 30%;
+}
+
+.boxes img {
+    width: 30px;
+}
+
+.total {
+    margin-top: 15px;
+    font-size: 20px;
+}
